@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>22a063dfcb5e8.ico</ApplicationIcon>
+    <PackageIcon>btn_GPS_002.png</PackageIcon>
+    <AssemblyVersion>0.1.0.0</AssemblyVersion>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <FileVersion>0.1.0.0</FileVersion>
+    <Description>TSGrounds is a tool designed for viewing and analyzing map structures used in classic pixel-style games such as TS1 and TS2.
+The application allows users to inspect ground layout data, visualize pixel-based map elements, and better understand how game environments are structured internally. It is intended for modders, developers, and enthusiasts who want to explore or study the underlying map data in a clear and accessible format. Dev by DEVX</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="22a063dfcb5e8.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="D:\Download\btn_GPS_002.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
